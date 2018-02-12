@@ -7,7 +7,7 @@
 [![Drone](https://ci.jamrizzi.com/api/badges/jamrizzi/redux-context-provider/status.svg)](https://ci.jamrizzi.com/jamrizzi/redux-context-provider)
 [![GitHub stars](https://img.shields.io/github/stars/jamrizzi/redux-context-provider.svg?style=social&label=Stars)](https://github.com/jamrizzi/redux-context-provider)
 
-Inject redux into react context
+> 💉 Inject redux into react context
 
 Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
 
