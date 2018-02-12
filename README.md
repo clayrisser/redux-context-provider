@@ -1,5 +1,10 @@
 # redux-context-provider
 
+[![Beerpay](https://beerpay.io/jamrizzi/redux-context-provider/badge.svg?style=beer-square)](https://beerpay.io/jamrizzi/redux-context-provider)
+[![Beerpay](https://beerpay.io/jamrizzi/redux-context-provider/make-wish.svg?style=flat-square)](https://beerpay.io/jamrizzi/redux-context-provider?focus=wish)
+[![NPM](https://img.shields.io/npm/v/redux-context-provider.svg?style=flat-square)](https://www.npmjs.com/package/redux-context-provider)
+[![NPM](https://img.shields.io/npm/dt/redux-context-provider.svg?style=flat-square)](https://www.npmjs.com/package/redux-context-provider)
+[![Drone](https://ci.jamrizzi.com/api/badges/jamrizzi/redux-context-provider/status.svg)](https://ci.jamrizzi.com/jamrizzi/redux-context-provider)
 [![GitHub stars](https://img.shields.io/github/stars/jamrizzi/redux-context-provider.svg?style=social&label=Stars)](https://github.com/jamrizzi/redux-context-provider)
 
 Inject redux into react context
