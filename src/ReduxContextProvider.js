@@ -10,13 +10,14 @@ export default class ReduxContext extends Component {
     // eslint-disable-next-line react/forbid-prop-types
     context: PropTypes.object,
     // eslint-disable-next-line react/forbid-prop-types
-    actions: PropTypes.object.isRequired,
+    actions: PropTypes.object,
     // eslint-disable-next-line react/forbid-prop-types
     store: PropTypes.object.isRequired,
     children: PropTypes.element.isRequired
   };
   static defaultProps = {
-    context: {}
+    context: {},
+    actions: {}
   };
 
   componentWillMount() {
