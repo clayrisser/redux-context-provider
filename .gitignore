@@ -73,3 +73,4 @@ idea/
 .cache/
 dist/
 lib/
+umd/

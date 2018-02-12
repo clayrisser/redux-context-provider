@@ -1,11 +1,14 @@
 {
   "name": "redux-context-provider",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Inject redux into react context",
   "main": "lib/ReduxContextProvider.js",
   "scripts": {
     "start": "npm run lint:fix && parcel watch src/ReduxContextProvider.js",
-    "build": "npm run lint:fix && parcel build --out-dir lib src/ReduxContextProvider.js",
+    "build": "npm run clean && npm run lint:fix && npm run build:lib && npm run build:umd",
+    "build:umd": "node node_modules/parcel-bundler/bin/cli build --out-dir umd src/ReduxContextProvider.js",
+    "build:lib": "node node_modules/babel-cli/bin/babel src -d lib",
+    "clean": "rm -rf lib dist umd",
     "lint": "node node_modules/eslint/bin/eslint ./",
     "lint:fix": "node node_modules/eslint/bin/eslint --fix ./",
     "prepublish": "npm run build"
@@ -30,7 +33,8 @@
     "url": "https://github.com/jamrizzi/redux-context-provider/issues"
   },
   "files": [
-    "lib"
+    "lib",
+    "umd"
   ],
   "homepage": "https://github.com/jamrizzi/redux-context-provider#readme",
   "dependencies": {
@@ -41,6 +45,7 @@
     "redux": "^3.7.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
@@ -62,6 +67,7 @@
   },
   "eslintIgnore": [
     "dist",
-    "lib"
+    "lib",
+    "umd"
   ]
 }
