@@ -1,0 +1,59 @@
+{
+  "name": "redux-context-provider",
+  "version": "0.0.1",
+  "description": "Inject redux into react context",
+  "main": "lib/ReduxContextProvider.js",
+  "scripts": {
+    "start": "npm run lint:fix && parcel watch src/ReduxContextProvider.js",
+    "build":
+      "npm run lint:fix && parcel build --out-dir lib src/ReduxContextProvider.js",
+    "lint": "node node_modules/eslint/bin/eslint ./",
+    "lint:fix": "node node_modules/eslint/bin/eslint --fix ./",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamrizzi/redux-context-provider.git"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "context",
+    "provider",
+    "react-redux",
+    "inject",
+    "react-native",
+    "native"
+  ],
+  "author": "Jam Risser <jam@jamrizzi.com> (https://jam.jamrizzi.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamrizzi/redux-context-provider/issues"
+  },
+  "files": ["lib"],
+  "homepage": "https://github.com/jamrizzi/redux-context-provider#readme",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "parcel-bundler": "^1.5.1"
+  },
+  "babel": {
+    "presets": ["env", "react", "stage-2"]
+  },
+  "eslintIgnore": ["dist", "lib"]
+}

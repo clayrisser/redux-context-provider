@@ -1,0 +1,12 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    "no-plusplus": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "class-methods-use-this": "off",
+    "react/jsx-filename-extension": "off",
+    "comma-dangle": ["error", "never"]
+  }
+}
