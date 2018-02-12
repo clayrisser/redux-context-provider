@@ -1,12 +1,11 @@
 {
   "name": "redux-context-provider",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Inject redux into react context",
   "main": "lib/ReduxContextProvider.js",
   "scripts": {
     "start": "npm run lint:fix && parcel watch src/ReduxContextProvider.js",
-    "build":
-      "npm run lint:fix && parcel build --out-dir lib src/ReduxContextProvider.js",
+    "build": "npm run lint:fix && parcel build --out-dir lib src/ReduxContextProvider.js",
     "lint": "node node_modules/eslint/bin/eslint ./",
     "lint:fix": "node node_modules/eslint/bin/eslint --fix ./",
     "prepublish": "npm run build"
@@ -30,7 +29,9 @@
   "bugs": {
     "url": "https://github.com/jamrizzi/redux-context-provider/issues"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/jamrizzi/redux-context-provider#readme",
   "dependencies": {
     "lodash": "^4.17.5",
@@ -53,7 +54,14 @@
     "parcel-bundler": "^1.5.1"
   },
   "babel": {
-    "presets": ["env", "react", "stage-2"]
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
   },
-  "eslintIgnore": ["dist", "lib"]
+  "eslintIgnore": [
+    "dist",
+    "lib"
+  ]
 }
